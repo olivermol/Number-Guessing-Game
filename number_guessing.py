@@ -62,32 +62,4 @@ def start_game():
                     sys.exit()
 
 
-                    
-                    
-
-
-            
-
-
-
-#    Psuedo-code Hints
-    
-#     When the program starts, we want to:
-#     ------------------------------------
-
-
-    
-#     4. Once the guess is correct, stop looping, inform the user they "Got it"
-#          and show how many attempts it took them to get the correct number.
-#     5. Save their attempt number to a list.
-#     6. At the end of the game, show the player, 1) their number of attempts, 2) the mean, median, and mode of the saved attempts list.
-#     7. Ask the player if they want to play again.
-    
-#     ( You can add more features/enhancements if you'd like to. )
-    
-    # write your code inside this function.
-
-
-
-# Kick off the program by calling the start_game function.
 start_game()
