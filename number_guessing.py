@@ -26,10 +26,10 @@ def start_game():
         else:
             attempts += 1
             if answer > guessed_number:
-                print("{} is too high, try a lower number".format(answer))
+                print(f"{answer} is too high, try a lower number")
                 continue
             if answer < guessed_number:
-                print("{} is too low, try a higher number".format(answer))
+                print(f"{answer} is too low, try a higher number")
                 continue
             else:
 #  4. Once the guess is correct, stop looping, inform the user they "Got it" 
@@ -42,7 +42,7 @@ def start_game():
 # Statitics about attempts
 # And show it median, mode and mean                
                 print("-==WINNER NUMBER: ==- \n")
-                print("Your WINNER NUMBER: {}".format(answer))
+                print(f"Your WINNER NUMBER: {answer}")
                 print(f"Median of your attempts number is: {median(answer_list)}")
                 print(f"Mode of your attempts number is: {mode(answer_list)}")
                 print(f"Mean of your attempts is: {mean(answer_list)}")
