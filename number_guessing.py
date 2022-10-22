@@ -6,7 +6,7 @@ import sys
 #     1. Display an intro/welcome message to the player.
 #     2. Store a random number as the answer/solution.
 def start_game():
-    print("Welcome to the Number Guessing Game! \n Lets get fun")
+    print("Welcome to the Number Guessing Game!\nLets get fun")
     answer = 0
     attempts = 0
     answer_list = []
@@ -33,7 +33,9 @@ def start_game():
                 continue
             else:
                 answer_list.append(attempts)
-                print("\n ***You are rock! You've figured out what was the guessed number!***")
+                print("\n ========================== \n")
+                print("\n *** You are rock! You've figured out what was the guessed number! ***")
+                print("\n ========================== \n")
                 print("\n  ***  Your statics:  *** \n ========================== \n")
                 
                 print("-==WINNER NUMBER: ==- \n")
@@ -47,7 +49,7 @@ def start_game():
             
             while True:
                 try:
-                    new_game = input("\n Would you like to try again? \n (Please use 'y' = Yes or 'n' = No)")
+                    new_game = input("\n *** Would you like to try again? ***\n(Please use 'y' = Yes or 'n' = No) : ")
                     if new_game != 'y' or 'n':
                         raise ValueError
                 except ValueError:
